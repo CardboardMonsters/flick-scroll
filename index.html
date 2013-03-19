@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flick Scroll</title>
+        <meta name="viewport" content="initial-scale=1">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <script type="text/javascript" src="jquery-1.8.2.js"></script>
+        <script type="text/javascript" src="flick-scroll.js"></script>
+        <script>
+        $(document).ready(function(){
+            $.flickScroll();
+        });
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Flick scrolling</h1>
+            <p>An experiment in mobile UX</p>
+        </header>
+        <article>
+            <h2>Introduction</h2>
+            <p>Due to the size constraints of mobile devices, a number of methods for displaying content have evolved:</p>
+            <h3>Continuous Scoll</h3>
+            <p>This is congruent with how content is displayed on standard desktops &emdash; as a long scroll, the viewing position of which can be moved vertically.</p>
+            <h3>Paged Content</h3>
+            <p>This has seen a number of different implementations over the years, but the basic concept is arranging the content into smaller chunks which are navigated using a horizontal interface.</p>
+            <h2>Goals</h2>
+            <p>The objective of this experiment is to provide a jquery library that provides an improved interface for viewing content.</p> 
+            <h2>Hypothesis</h2>
+            <p>I believe that these two methods are flawed.</p>
+            <ol>
+                <li><em>Continous Scroll</em> requires the user to move the content up and down in order to view more content. It provides this interface in a non-structured way, so the user is required to maintain their reading position for the duration of the scroll, making large or poorly formatted documents difficult to work with.</li>
+                <li><em>Paged Content</em> tends to use horizontally–orientated controls. This requires an unnatural gesture for most users. It's a lot easier to move a thumb up and down, instead of left and right on a mobile device.</li>
+            </ol>
+            <p>By combining aspects of the two approaches, we can remove the short comings of both.</p>
+            <p>Using the vertical gestures of the <em>Continuous Scroll</em> and the structure of <em>Paged Content,</em> we can provide less intensive physical experience. The thumb gestures are simpler, and by displaying content in a consistent place we reduce the amount of work the reader must do to maintain place.</p>
+            <h2>In The Wild</h2>
+            <p>You can see examples of this in apps like Flipboard and websites like inhabitat.com</p> 
+        </article>
+    </body>
+</html>
